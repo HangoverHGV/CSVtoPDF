@@ -1,3 +1,14 @@
 !!! 'main.py' is the script that converts pdf in multiple tables
 !!!!! ALL user variables are saved in .env, you can change there the name, page range and the type value for type column
-!!! ALL products will be runed from 'combine csv' only after all others csvs are done
+!!!!!!!!!!!!!For tabula you should install JAVA!!!!!!!!!
+
+I added <<                          FIRST_CATEGORY_AUTO witch should ALWAYS be a bool (True or False). I use this because sometimes the pdf doesn`t have the info and you should add it manually.
+        FIRST_CATEGORY_AUTO=False
+        SECTION_NONAUTO="Organic"   SECTION_NONAUTO this value tells us what the program should use if the first section value doesn`t exist, This is relevant ONLY with FIRST_CATEGORY_AUTO=False
+                               >>   this is only for
+
+
+Python pakages to install:
+RUN in the CMD
+
+pip install -r requirements.txt
